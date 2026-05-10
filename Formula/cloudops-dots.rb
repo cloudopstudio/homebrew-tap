@@ -7,22 +7,22 @@ class CloudopsDots < Formula
   on_macos do
     on_arm do
       url "https://github.com/cloudopstudio/cloudops-dots/releases/download/v#{version}/cloudops-installer-darwin-arm64"
-      sha256 "8d202fb89d9a0700d20b9ff077a74065aaee76dfe034de72a03e82e1b30b813b"
+      sha256 "8a5c371cf1b323442cc7e8e543487587210fc6038fa1f6b5d98cec9a5419ed0a"
     end
     on_intel do
       url "https://github.com/cloudopstudio/cloudops-dots/releases/download/v#{version}/cloudops-installer-darwin-amd64"
-      sha256 "c5051fad8de165ff02aa3994b75972627fc1ddb499913acca04ce1d7e39ac750"
+      sha256 "51479e991b4f6525d6cf170ca6500e81d040625f37b0124755652d390950627f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/cloudopstudio/cloudops-dots/releases/download/v#{version}/cloudops-installer-linux-arm64"
-      sha256 "2db1e76ec79b205c09e0776855bc30871559d143ce70aae99dac5a88c9e09430"
+      sha256 "4d9201732ac822a608d4b317351bb5f176165116efcc14bdbd191a68ae02175f"
     end
     on_intel do
       url "https://github.com/cloudopstudio/cloudops-dots/releases/download/v#{version}/cloudops-installer-linux-amd64"
-      sha256 "34a3a119cbc3b53d419f5d2bb98ca9bb77272f21e6bbda4618057aff60bed51c"
+      sha256 "34c66ca50902dcc651dfb00ff666008ae7f14a557d71eee2dc3beaa3f343a513"
     end
   end
 
