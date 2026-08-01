@@ -5,21 +5,21 @@
 class Engram < Formula
   desc "Persistent memory for AI coding agents. Fork of Gentleman-Programming/engram with PostgreSQL, AWS RDS IAM, Azure Entra auth, and unaccent FTS."
   homepage "https://github.com/cloudopstudio/engram"
-  version "1.20.0"
+  version "1.20.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_darwin_amd64.tar.gz"
-      sha256 "5dce53b3e46c69977b1a88883b0dba156b6bcf1b45118970a83dc973fac871ca"
+      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.1/engram_1.20.1_darwin_amd64.tar.gz"
+      sha256 "3b9ccd10fdf70b8bf15aa6be69bbc4065ba4ce34752b66c41804cecb1b12a517"
 
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_darwin_arm64.tar.gz"
-      sha256 "3c7293c0b5c35865db70e38299d99f9a9a15b8f0f39ba0895c34ae3f9d606fad"
+      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.1/engram_1.20.1_darwin_arm64.tar.gz"
+      sha256 "d9cd2285fc1aac85acdf955bc1b6c3f21f0ec1f4e6e65a92a35252eb525d8609"
 
       define_method(:install) do
         bin.install "engram"
@@ -29,15 +29,15 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_linux_amd64.tar.gz"
-      sha256 "425b3fe55b526e5ed56ee5e3b617d41797017723f51680d877e6406846caa253"
+      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.1/engram_1.20.1_linux_amd64.tar.gz"
+      sha256 "53c30fbae552a5c3b845501c032706860c8030b56d838914d14c8f4a4c7fe533"
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_linux_arm64.tar.gz"
-      sha256 "0ec5e2da3863d202eb221bae28dd78e81786451607b291911a77e0be74fda5a8"
+      url "https://github.com/cloudopstudio/engram/releases/download/v1.20.1/engram_1.20.1_linux_arm64.tar.gz"
+      sha256 "34caad4125d23cea4583551d66deb59e8119216a77e1c8d17d645b814ce1704b"
       define_method(:install) do
         bin.install "engram"
       end
