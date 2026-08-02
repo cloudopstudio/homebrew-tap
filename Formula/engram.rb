@@ -11,7 +11,7 @@ class Engram < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_darwin_amd64.tar.gz"
-      sha256 "036178c96e78e3678dbf48e623cde7c5d6ffad913b9d2ee8540123308b43ef3f"
+      sha256 "63cbac76e432313699b61ce5409f0500338ee0fcc9f7a1145f3b1bbcd8b806d4"
 
       define_method(:install) do
         bin.install "engram"
@@ -19,7 +19,7 @@ class Engram < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_darwin_arm64.tar.gz"
-      sha256 "5ebcbf31dbd95e3bead7ab4137bfd552b1c346d31fb39e91143754e8357a0612"
+      sha256 "0567caa4eafed80d83199e1f2c9a076564d53c7629ea7799cdcd323ecd80b9c7"
 
       define_method(:install) do
         bin.install "engram"
@@ -30,14 +30,14 @@ class Engram < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_linux_amd64.tar.gz"
-      sha256 "2a0fc2b26af1f0d71676bca6316dc6f14631c6f0ae0bc2d895e9750b86d2a944"
+      sha256 "84ad75e16d2c0fdeb978f941d7b4635e1d55d2f46ec0c69aaca14af71e87152a"
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cloudopstudio/engram/releases/download/v1.20.0/engram_1.20.0_linux_arm64.tar.gz"
-      sha256 "68074ab26761d3f4e9f3e840355dfeab223d61ba3bed91c08a20b79f52105ed5"
+      sha256 "a6f5e2b5a97304534221c8ea0bdac70da6449604f3f7000a2bacc44cf2d03221"
       define_method(:install) do
         bin.install "engram"
       end
